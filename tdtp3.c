@@ -25,15 +25,19 @@ int main(int argc, char** argv){
     int tab[size];
 
     //Q8: passage du scan des valeurs dans une fonction
-    scan_tab_int(size, tab);
-
-    //calcul de la moyenne et affichage
-    float moyenne = average_int_array(tab, size);
-    printf("La moyenne des %d elements entres est: %f\n", size, moyenne);
+    if(size > 0){
+        scan_tab_int(size, tab);
+        //calcul de la moyenne et affichage
+        float moyenne = average_int_array(tab, size);
+        printf("La moyenne des %d elements entres est: %f\n", size, moyenne);
+    }
+    else{
+        printf("Mauvaise taille entrée, passage à la suite...\n");
+    }
 //--------------------------
 
 //-------------Q9-------------
-    char chaine[] = "Tanguy est le meilleur ";
+    char chaine[] = "il faut un espace à la fin sinon le dernier mot n'est pas compté ";
 
     const int nb_mots = getNbMots(chaine);
     //Initialisation d'un tableau avec suffisament de "cases" pour stocker tous les mots séparément
