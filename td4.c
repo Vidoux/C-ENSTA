@@ -51,21 +51,19 @@ int main(int argc, char* argv[]){
         current_student_ptr = current_student_ptr->next;
     }
     
-    return 0;
+    //return 0;
 
 // exercices:
     // q0: supprimer l'étudiant nommé "Bar" en gardant une liste cohérente, le vérifier en affichant la liste
     current_student_ptr = student_list.next;
-    printf("%s\n", "Tanguy");
-    while(current_student_ptr){
-        printf("%s\n",current_student_ptr->next->name );
-        if(strcmp(current_student_ptr->next->name, "Bar")){
-            printf("Done\n");
-
+    student_t* prev_to_delete_student_ptr = NULL
+    while(current_student_ptr ){
+        if (strcmp(current_student_ptr->next->name, "Bar")){
+            prev_to_delete_student_ptr = current_student_ptr;
         }
-        printf("%s %d\n", current_student_ptr->name, current_student_ptr->age);
         current_student_ptr = current_student_ptr->next;
     }
+    printf("%s\n",current_student_ptr->next->name );
 
     // Pour la suite partir éventuellement sur un nouveau fichier dans lequel on fera des copier/coller judicieux
     // q1: écrire une fonction qui renvoie une liste contenant uniquement un étudiant fantôme
@@ -84,6 +82,8 @@ int main(int argc, char* argv[]){
     // passée en paramètre pour qu'elle pointe vers le dernier élément
     // q5: écrire une fonction qui prend en paramètre le nom d'un étudiant, son age, une position dans la liste et une liste d'étudiants
     //  et ajoute cet étudiant dans la liste à la position demandée
+
+    return 0;
     
  
 }
