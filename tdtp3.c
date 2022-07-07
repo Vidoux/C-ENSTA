@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <s
 #include "tdtp3.h"
 
 
