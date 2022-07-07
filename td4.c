@@ -68,8 +68,6 @@ int main(int argc, char* argv[]){
     // Pour la suite partir éventuellement sur un nouveau fichier dans lequel on fera des copier/coller judicieux
     // q1: écrire une fonction qui renvoie une liste contenant uniquement un étudiant fantôme
 
-    // q2: écrire une fonction qui rajoute un nom/age en fin d'une liste d'élèves passée en argument, la fonction renvoie 1 si l'ajout se 
-    // passe bien, 0 si l'age ou le nom sont invalides (nom de 0 lettre, age négatif, etc).
 
     // q2bis: écrire une fonction qui rajoute plusieurs noms/ages en fin de liste en appelant q2, la fonction renvoie le nombre
     // d'élèves qui ont été ajoutés
@@ -86,4 +84,12 @@ int main(int argc, char* argv[]){
     return 0;
     
  
+}
+
+
+    // q2: écrire une fonction qui rajoute un nom/age en fin d'une liste d'élèves passée en argument, la fonction renvoie 1 si l'ajout se 
+    // passe bien, 0 si l'age ou le nom sont invalides (nom de 0 lettre, age négatif, etc).
+
+int append_student(char* name, int* age, _student* lsit){
+    _student 
 }
